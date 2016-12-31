@@ -1,0 +1,4 @@
+sample/bower_components/
+sample/node_modules/
+sample/.sass-cache/
+sample/style.css

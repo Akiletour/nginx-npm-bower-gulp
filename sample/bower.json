@@ -1,0 +1,21 @@
+{
+  "name": "nginx-npm-bower-gulp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Pascal GAULT <pascal@inrage.fr>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
