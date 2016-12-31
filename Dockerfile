@@ -13,13 +13,11 @@ RUN apt-get update \
 
 RUN update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 
-RUN mkdir -p /app && rm -fr /usr/share/nginx/html && ln -s /app /usr/share/nginx/html
-
 RUN gem install sass
 
-ADD sample/ /app
+ADD sample/ /usr/share/nginx/html
 
-WORKDIR /app
+WORKDIR /usr/share/nginx/html
 
 RUN npm install bower gulp gulp-ruby-sass
 RUN ./node_modules/bower/bin/bower --allow-root install
